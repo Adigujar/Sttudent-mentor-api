@@ -12,7 +12,7 @@ let students = [
 router.get('/students', function (req, res, next) {
   res.json(students);
 });
-router.get('/new-students', function (req, res, next) {
+router.post('/new-students', function (req, res, next) {
     let new_student = {
         name:req.body.name,
         id:students.length+1
