@@ -7,10 +7,10 @@ let mentors = [
   { id: 3, name: 'mentor-3' },
   { id: 4, name: 'mentor-4' },
 ];
-router.get('/mentors', function (req, res, next) {
+router.gey('/mentors', function (req, res, next) {
   res.json(mentors);
 });
-router.get('/new-mentor', function (req, res, next) {
+router.post('/new-mentor', function (req, res, next) {
   let new_mentor = {
       name:req.body.name,
       id:mentors.length+1
